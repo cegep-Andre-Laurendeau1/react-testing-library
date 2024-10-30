@@ -12,10 +12,34 @@ const MockFollowersList = () => {
 
 describe('tests de followers', () => {
 
+    beforeEach(() => {
+        console.log("RUNNING BEFORE EACH TEST")
+    })
+
+    beforeAll(() => {
+        console.log("RUNNING ONLY ONCE BEFORE ALL TEST")
+    })
+
+    afterEach(() => {
+        console.log("RUNNING AFTER EACH TEST")
+    })
+
+    afterAll(() => {
+        console.log("RUNNING ONLY ONCE AFTER ALL TEST")
+    })
+
     it('find 1 follower card', async () => {
             render(<MockFollowersList />);
             const followerDivElement = await screen.findByTestId("follower-item-0")
-            screen.debug()
+
+            expect(followerDivElement).toBeInTheDocument();
+        }
+    );
+
+    it('find 1 follower card (2)', async () => {
+            render(<MockFollowersList />);
+            const followerDivElement = await screen.findByTestId("follower-item-0")
+
             expect(followerDivElement).toBeInTheDocument();
         }
     );
