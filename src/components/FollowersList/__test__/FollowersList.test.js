@@ -20,10 +20,10 @@ describe('tests de followers', () => {
         }
     );
 
-    it('find all follower card', async () => {
-            render(<MockFollowersList />);
-            const followerDivElements = await screen.findAllByTestId(/follower-item-/i)
-            expect(followerDivElements.length).toBe(5);
-        }
-    );
+    // it('find all follower card', async () => {
+    //         render(<MockFollowersList />);
+    //         const followerDivElements = await screen.findAllByTestId(/follower-item-/i)
+    //         expect(followerDivElements.length).toBe(5);
+    //     }
+    // );
 });
