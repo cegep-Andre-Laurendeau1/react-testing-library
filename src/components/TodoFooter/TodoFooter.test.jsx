@@ -4,7 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 
 const WrappingComponent = ({numberOfIncompleteTasks}) => {
     return (
-        <BrowserRouter>
+        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
             <TodoFooter numberOfIncompleteTasks={numberOfIncompleteTasks}/>
         </BrowserRouter>
     )

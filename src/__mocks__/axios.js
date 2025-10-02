@@ -1,3 +1,5 @@
+import { vi } from 'vitest';
+
 const mockResponse = {
     data: {
         results: [
@@ -21,5 +23,5 @@ const mockResponse = {
 }
 
 export default {
-    get: jest.fn().mockResolvedValue(mockResponse)
+    get: vi.fn().mockResolvedValue(mockResponse)
 }
