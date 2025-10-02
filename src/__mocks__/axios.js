@@ -5,8 +5,8 @@ const mockResponse = {
         results: [
             {
                 name: {
-                    first: "Joe",
-                    last: "Montana"
+                    first: "Tom",
+                    last: "Brady"
                 },
                 picture: {
                     large: "https://randomuser.me/api/portraits/men/39.jpg"
